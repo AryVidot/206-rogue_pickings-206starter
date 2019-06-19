@@ -11,7 +11,8 @@
 }
 html {
   font-size: 16px;
-  margin: 0.625em;
+  /* margin: 0.625em; */
+  margin: 1.25em;
 }
 
 body {
@@ -33,12 +34,26 @@ ul {
   list-style-type: none;
 }
 
-a {
+ul li a {
   text-decoration: none;
   color: #77a466;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 2.5;
+}
+#flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  /* flex-wrap: row wrap; */
+}
+
+#flex-items {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 header {
@@ -65,11 +80,17 @@ h3,
 h4 {
   color: black;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
+  padding: 1.5em 0;
+  /* line-height: 2.5; */
 }
 
 h3 {
   color: #77a466;
+}
+
+h4 {
+  /* margin: 0.265em 0; */
 }
 
 img {
@@ -79,8 +100,14 @@ img {
   border-bottom: 0.1875em solid #77a466;
 }
 
+ul li {
+  color: #77a466;
+  line-height: 2.5;
+}
+
 .main-title {
   margin: 2em 0;
+  /* border-bottom: 0.0625em solid rgb(218, 218, 218); */
 }
 
 .main-title,
@@ -88,5 +115,14 @@ p {
   margin: 1em 0;
 }
 
-.section-one {
+section,
+.section-one,
+.section-two {
+  margin: 0.265em 0;
+  border-bottom: 0.0625em solid rgb(218, 218, 218);
+}
+
+.reviews {
+  line-height: 1.5;
+  font-size: 1.1em;
 }
