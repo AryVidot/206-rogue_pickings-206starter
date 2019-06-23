@@ -23,30 +23,33 @@ section {
   padding: 1em 0;
 }
 
-p {
-  line-height: 1.5;
+.main-title p {
+  line-height: 1.7;
   font-size: 1.3em;
   font-weight: 300;
   color: #000;
 }
+}
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-ul li a {
+ul, li, a {
   text-decoration: none;
   color: #77a466;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 2.5;
 }
+
 #flex-container {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  /* flex-wrap: row wrap; */
 }
 
 #flex-items {
@@ -78,19 +81,13 @@ h1,
 h2,
 h3,
 h4 {
-  color: black;
   text-transform: uppercase;
   font-weight: 900;
-  padding: 1.5em 0;
-  /* line-height: 2.5; */
+  padding: 1.25em 0;
 }
 
 h3 {
   color: #77a466;
-}
-
-h4 {
-  /* margin: 0.265em 0; */
 }
 
 img {
@@ -100,9 +97,12 @@ img {
   border-bottom: 0.1875em solid #77a466;
 }
 
-ul li {
+.menu, ul, li {
   color: #77a466;
   line-height: 2.5;
+  font-weight: 500;
+  list-style-type: none;
+
 }
 
 .main-title {
@@ -112,17 +112,34 @@ ul li {
 
 .main-title,
 p {
-  margin: 1em 0;
+  /* margin: 1em 0; */
 }
 
-section,
+/* section, */
+.main-title,
 .section-one,
-.section-two {
-  margin: 0.265em 0;
+.section-two,
+.section-three {
+  padding: 1.25em 0;
+  margin: 0;
   border-bottom: 0.0625em solid rgb(218, 218, 218);
 }
 
+.section-one{
+  padding: 0 0 1.25em 0;
+}
 .reviews {
   line-height: 1.5;
   font-size: 1.1em;
+}
+
+/* Footer here */
+footer{
+  text-align: center;
+  font-size: 0.625em;
+}
+
+footer span{
+  color: #77a466;
+  font: 500
 }
