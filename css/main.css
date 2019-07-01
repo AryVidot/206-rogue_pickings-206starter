@@ -18,6 +18,7 @@ html {
 body {
   font-size: 1em;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  padding: 1.1em;
 }
 
 .container {
@@ -26,21 +27,34 @@ body {
 /* TYPOGRAPHY
 ##########################  */
 
+h3 {
+  padding: 1.25em 0;
+}
+
 h2,
 h3,
 h4 {
   text-transform: uppercase;
   font-weight: 900;
-  padding: 1.25em 0;
 }
 
 h3 {
   color: #77a466;
   margin: 0;
+  font-size: 1.18em;
 }
 
 header h1 span {
   color: #77a466;
+}
+
+.home-about,
+.menu,
+.reviews,
+.address {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.0625em solid rgb(218, 218, 218);
 }
 
 /* HEADER 
@@ -83,10 +97,11 @@ nav a {
 /* HOME-ABOUT 
 ##########################  */
 
-.main-title p {
+.home-title,
+p {
   line-height: 1.8;
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 500;
   color: #000;
 }
 
@@ -113,43 +128,35 @@ img {
   border-bottom: 0.1875em solid #77a466;
 }
 
-#menu,
-ul,
-li {
+/* MENU
+##########################  */
+
+ul li {
   color: #77a466;
   line-height: 2.5;
   font-weight: 500;
   list-style-type: none;
+  padding: 0;
 }
-
-.main-title {
-  margin: 0;
-  border-bottom: 0.0625em solid rgb(218, 218, 218);
-}
-
-/* HOME-ABOUT 
-##########################  */
 
 body,
-.home-about,
-.bottom-section,
 footer {
   display: flex;
   justify-content: center;
-  /* align-content: center; */
+  align-content: center;
   flex-flow: row wrap;
 }
 
-#flex-items {
-  padding: 1.25em 0;
-  margin: 0;
-  border-bottom: 0.0625em solid rgb(218, 218, 218);
-}
+/* REVIEWS
+##########################  */
 
 .reviews {
   line-height: 1.5;
   font-size: 1.1em;
 }
+
+/* ADDRESS
+##########################  */
 
 /* Footer here */
 footer {
