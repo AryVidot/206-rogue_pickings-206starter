@@ -2,6 +2,7 @@
   font-family: "Wisdom Script";
   src: url("../fonts/wisdom-script.otf") format("opentype");
 }
+
 *,
 *::before,
 *::after {
@@ -182,4 +183,11 @@ footer span {
 
 @media all and (min-width: 1200px) {
   /* Desktop style here */
+}
+
+/* PRINT OPTION
+##########################  */
+
+@media print {
+  /* print style sheets go here */
 }
