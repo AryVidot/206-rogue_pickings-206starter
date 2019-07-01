@@ -104,25 +104,25 @@ p {
   font-weight: 500;
   color: #000;
 }
-
-#flex-container {
+/* 
+.container {
   max-width: 1200px;
-  width: 90%;
-  padddisplay: flex;
+  width: 100%%;
+  display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start
   flex-flow: row wrap;
-  /* flex-direction: column; */
-}
+  flex-direction: column;
+} */
 
 header h1 {
   text-transform: uppercase;
   border-bottom: 0.125em solid #77a466;
-  line-height: 2.5;
+  line-height: 2;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-top: 0.1875em solid #77a466;
   border-bottom: 0.1875em solid #77a466;
@@ -131,7 +131,7 @@ img {
 /* MENU
 ##########################  */
 
-ul li {
+.container > ul {
   color: #77a466;
   line-height: 2.5;
   font-weight: 500;
@@ -139,13 +139,13 @@ ul li {
   padding: 0;
 }
 
-body,
+/* body,
 footer {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
-}
+} */
 
 /* REVIEWS
 ##########################  */
@@ -158,7 +158,8 @@ footer {
 /* ADDRESS
 ##########################  */
 
-/* Footer here */
+/* FOOTER
+##########################  */
 footer {
   text-align: center;
   font-size: 0.625em;
@@ -169,9 +170,15 @@ footer span {
   font: 500;
 }
 
+/* TABLET STYLE
+##########################  */
+
 @media all and (min-width: 768px) {
   /* Tablet Style here */
 }
+
+/* DESKSTOP STYLE
+##########################  */
 
 @media all and (min-width: 1200px) {
   /* Desktop style here */
