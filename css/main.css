@@ -20,6 +20,7 @@ body {
   font-size: 1em;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   padding: 1.1em;
+  display: flex;
 }
 
 .container {
@@ -98,23 +99,13 @@ nav a {
 /* HOME-ABOUT 
 ##########################  */
 
-.home-title,
-p {
+.home-title > p {
   line-height: 1.8;
   font-size: 1.1em;
+  /* font-size: 3em; */
   font-weight: 500;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
-/* 
-.container {
-  max-width: 1200px;
-  width: 100%%;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start
-  flex-flow: row wrap;
-  flex-direction: column;
-} */
 
 header h1 {
   text-transform: uppercase;
@@ -167,6 +158,7 @@ footer {
 }
 
 footer span {
+  font-family: "Wisdom Script", cursive;
   color: #77a466;
   font: 500;
 }
@@ -175,14 +167,208 @@ footer span {
 ##########################  */
 
 @media all and (min-width: 768px) {
-  /* Tablet Style here */
+  body {
+    display: flex;
+    padding: 2em;
+  }
+  .bottom-sct {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* align-content: flex-start; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 0.0625em solid rgb(218, 218, 218);
+  }
+  .menu,
+  .reviews,
+  .address {
+    padding: 0.9em;
+    max-width: 35%;
+    font-size: 1em;
+    /* margin-top: 10px; */
+  }
+  .reviews {
+    border-left: 0.0625em solid rgb(218, 218, 218);
+    border-right: 0.0625em solid rgb(218, 218, 218);
+    line-height: 1.5;
+    font-size: 1em;
+  }
+
+  h4 {
+    font-size: 0.8em;
+  }
+
+  /* section {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: row;
+  } */
 }
 
 /* DESKSTOP STYLE
 ##########################  */
 
 @media all and (min-width: 1200px) {
-  /* Desktop style here */
+  body .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 30px;
+  }
+
+  /*The widths are in a percentage!*/
+  header {
+    height: 110px;
+    border-bottom: 3px solid #77a466;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    float: left;
+    margin: 0;
+    padding: 38px 0;
+  }
+  header h1 span {
+    color: #77a466;
+  }
+
+  header nav {
+    float: right;
+    padding: 46px 0;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 10px;
+    display: inline;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #77a466;
+  }
+
+  /*The widths are in a percentage!*/
+  .top-section,
+  .bottom-section {
+    margin: 0 auto;
+    clear: both;
+  }
+
+  .main-image {
+    height: auto;
+    float: left;
+  }
+  .main-image img {
+    width: 100%;
+    border-bottom: 3px solid #77a466;
+  }
+
+  .home-title {
+    height: auto;
+    float: left;
+  }
+  .home-title h3 {
+    text-align: left;
+    padding: 5px 0;
+    color: #77a466;
+  }
+  .home-title p {
+    padding: 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three {
+    width: 33%;
+    height: auto;
+    float: left;
+    border-top: 1px solid #eee;
+  }
+
+  .section-one h4 {
+    padding: 10px 0;
+  }
+
+  .section-two {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+  }
+
+  .section-two h4,
+  .section-three h4 {
+    padding: 10px 30px;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0;
+  }
+  .menu li {
+    padding: 10px 0;
+    color: #77a466;
+  }
+
+  .reviews {
+    color: #333;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .address {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /*The widths are in a percentage!*/
+  footer {
+    height: 50px;
+    border-top: 3px solid #eee;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+  }
+  footer span {
+    font-family: "Wisdom Script", cursive;
+    text-transform: lowercase;
+    color: #77a466;
+    font-size: 14px;
+  }
 }
 
 /* PRINT OPTION
